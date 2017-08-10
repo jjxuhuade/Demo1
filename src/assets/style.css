@@ -6,3 +6,11 @@
   height: 50px;
   background: #ccc;
 }
+.main-content .home-component {
+  height: 100%;
+}
+.main-content .home-component .container {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  height: 100%;
+}

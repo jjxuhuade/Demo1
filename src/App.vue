@@ -1,10 +1,10 @@
 <template>
     <div id="app">
-        <jjHeader>header</jjHeader>
+        <jjHeader></jjHeader>
         <div class="main-content" :style="styleObject">
             <router-view></router-view>
         </div>
-        <jjFooter>footer</jjFooter>
+        <jjFooter></jjFooter>
     </div>
 </template>
 
