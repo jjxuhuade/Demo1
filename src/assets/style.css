@@ -2,6 +2,18 @@
   height: 100px;
   background: #eee;
 }
+.header ul {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.header ul li {
+  border: 1px solid #ccc;
+  margin-right: 2px;
+  padding: 0 5px;
+}
 .footer {
   height: 100px;
   background: #eee;

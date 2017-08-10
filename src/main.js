@@ -18,6 +18,7 @@ window.nprogress = nprogress
 
 router.beforeEach((to, from, next) => {
   nprogress.start()
+  next()
 })
 
 router.afterEach(route => {

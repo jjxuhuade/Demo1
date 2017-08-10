@@ -1,21 +1,34 @@
 @import "./config.less";
 
-.header{
-  height: @header-footer-height;
-  background: @header-footer-bg;
+.header {
+  height     : @header-footer-height;
+  background : @header-footer-bg;
+  ul {
+    margin          : 0;
+    height          : 100%;
+    display         : flex;
+    justify-content : flex-start;
+    align-items     : flex-start;
+    li {
+      border       : 1px solid #ccc;
+      margin-right : 2px;
+      padding      : 0 5px;
+    }
+  }
 }
 
-.footer{
-  height: @header-footer-height;
-  background: @header-footer-bg;
+.footer {
+  height     : @header-footer-height;
+  background : @header-footer-bg;
 }
 
-.main-content{
-   >.component{ height: 100%;
-       .container{
-         border-left: 1px solid @header-footer-bg;
-         border-right: 1px solid @header-footer-bg;
-         height: 100%;
-       }
-   }
+.main-content {
+  > .component {
+    height : 100%;
+    .container {
+      border-left  : 1px solid @header-footer-bg;
+      border-right : 1px solid @header-footer-bg;
+      height       : 100%;
+    }
+  }
 }
