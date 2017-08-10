@@ -25,7 +25,7 @@
 
     methods: {
       height () {
-        return ($(document).height() - 100) + 'px'
+        return ($(document).height() - 200) + 'px'
       }
     },
 

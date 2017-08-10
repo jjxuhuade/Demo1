@@ -2,20 +2,17 @@
     <div class="component">
         <div class="container">
             <div class="row">
-                home
+                demo1
             </div>
         </div>
     </div>
 </template>
 
 <script>
-  export default {
-    data () {
-    },
-    methods: {}
-  }
+    export default {
+      data () {
+        return {}
+      },
+      methods: {}
+    }
 </script>
-
-<style scoped>
-
-</style>

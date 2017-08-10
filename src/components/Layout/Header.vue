@@ -1,15 +1,24 @@
 <template>
     <header class="header text-center">
-        {{title}}
+        <ul class="list-unstyled clearfix" >
+            <li v-for="item in items"><router-link :to="item.path">{{item.name}}</router-link> </li>
+        </ul>
     </header>
 </template>
 <script>
     export default {
       data () {
         return {
-          title: 'header'
+          items: this.getRoutes()
         }
       },
-      methods: {}
+      methods: {
+        getRoutes () {
+          return this.$router.options.routes
+        }
+      },
+      mounted () {
+        console.log(this.$router.options.routes)
+      }
     }
 </script>

@@ -16,6 +16,14 @@ axios.defaults.headers['Content-Type'] = 'application/json'
 
 window.nprogress = nprogress
 
+router.beforeEach((to, from, next) => {
+  nprogress.start()
+})
+
+router.afterEach(route => {
+  nprogress.done()
+})
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

@@ -1,16 +1,16 @@
 .header {
-  height: 50px;
-  background: #ccc;
+  height: 100px;
+  background: #eee;
 }
 .footer {
-  height: 50px;
-  background: #ccc;
+  height: 100px;
+  background: #eee;
 }
-.main-content .home-component {
+.main-content > .component {
   height: 100%;
 }
-.main-content .home-component .container {
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+.main-content > .component .container {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
   height: 100%;
 }
