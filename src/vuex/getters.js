@@ -1,6 +1,6 @@
 const getters = {
   fullName: state => {
-    return state.currentUser.firstName + ' ' + state.currentUser.lastName
+    return state.currentUser.id + ' ' + state.currentUser.name
   }
 }
 

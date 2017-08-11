@@ -1,7 +1,8 @@
 const state = {
   currentUser: {
-    firstName: '',
-    lastName: '',
+    id: '',
+    name: '',
+    password: '',
     email: ''
   }
 }
