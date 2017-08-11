@@ -28,19 +28,18 @@ router.beforeEach((to, from, next) => {
   if (cookies.get('user') && cookies.get('session_id')) {
     store.dispatch('setCurrentUser', JSON.parse(cookies.get('user')))
   } else {
-    let params = {
-      name: 'user01',
-      password: '111111'
-    }
-    window.api.post('Public/login', params).then(response => {
-      if (response.status === 200 && response.data.status !== true) {
-        cookies.remove('user')
-        cookies.remove('session_id')
-        lockr.flush()
-        window.store.dispatch('setCurrentUser', {})
-      } else {
-        window.api.resetCommonData(response.data)
-      }
+    window.api.post('Public/getAllUsers').then(response => {
+      var user = _.sample(response.data)
+      window.api.post('Public/login', user).then(response => {
+        if (response.status === 200 && response.data.status !== true) {
+          cookies.remove('user')
+          cookies.remove('session_id')
+          lockr.flush()
+          window.store.dispatch('setCurrentUser', {})
+        } else {
+          window.api.resetCommonData(response.data)
+        }
+      })
     }).catch(error => {
       alert(error)
     })
