@@ -9,6 +9,8 @@ import router from './router'
 import nprogress from 'nprogress'
 import store from './vuex/store'
 import Api from './Helper/Api'
+import './Helper/Common'
+import './Helper/Filters'
 
 window.nprogress = nprogress
 window.store = store
@@ -48,6 +50,9 @@ router.beforeEach((to, from, next) => {
 })
 
 router.afterEach(route => {
+  if (!cookies.get('user') || !cookies.get('session_id')) {
+    router.push('/')
+  }
   nprogress.done()
 })
 
