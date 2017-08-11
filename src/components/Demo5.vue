@@ -3,7 +3,6 @@
         <div class="container">
             <div class="row">
                 <my-component :message="message"/>
-                <bs-date-input data-3d-date-picker="true"></bs-date-input>
             </div>
 
         </div>
