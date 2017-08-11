@@ -7,6 +7,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import nprogress from 'nprogress'
+import store from './vuex/store'
+
+window.nprogress = nprogress
+window.store = store
 
 axios.defaults.baseURL = HOST
 axios.defaults.timeout = 1000 * 15
@@ -14,7 +18,7 @@ axios.defaults.withCredentials = true
 axios.defaults.headers.session_id = lockr.get('session_id') ? lockr.get('session_id') : ''
 axios.defaults.headers['Content-Type'] = 'application/json'
 
-window.nprogress = nprogress
+Vue.config.productionTip = false
 
 router.beforeEach((to, from, next) => {
   nprogress.start()
@@ -31,6 +35,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: {App}
 })

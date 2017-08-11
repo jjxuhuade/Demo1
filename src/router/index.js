@@ -9,8 +9,8 @@ Vue.use(Router)
 export default new Router({
   mode: 'history',
   routes: [
-    { path: '/', name: 'home', component: Home },
-    { path: '/demo1', name: 'demo1', component: Demo1 },
-    { path: '/demo2', name: 'demo2', component: Demo2 }
+    {path: '/', name: 'home', component: Home},
+    {path: '/demo1', name: 'demo1', component: Demo1},
+    {path: '/demo2', name: 'demo2', component: Demo2}
   ]
 })
