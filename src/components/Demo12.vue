@@ -3,6 +3,7 @@
         <div class="container">
             <div class="row">
                 <li-componnet/>
+                {{name1}}
             </div>
 
         </div>
@@ -13,12 +14,13 @@
   export default {
     data: function () {
       return {
+        name1: '111'
       }
     },
     methods: {
     },
     mounted: function () {
-      console.log(this)
+      this.name1 = '222'
     }
   }
 </script>
