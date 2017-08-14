@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <jjHeader></jjHeader>
-        <div class="main-content" :style="styleObject">
+        <div class="main-content" ref="maincontent" :style="styleObject">
             <router-view></router-view>
         </div>
         <jjFooter></jjFooter>
