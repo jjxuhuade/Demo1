@@ -17,6 +17,11 @@ import Demo13 from '@/components/Demo13'
 import Demo14 from '@/components/Demo14'
 import Demo15 from '@/components/Demo15'
 import Demo16 from '@/components/Demo16'
+import Demo17 from '@/components/Demo17'
+import Demo18 from '@/components/Demo18'
+import Demo19 from '@/components/Demo19'
+import Demo20 from '@/components/Demo20'
+import Demo20Child from '@/components/Demo20Child'
 
 Vue.use(Router)
 
@@ -39,6 +44,10 @@ export default new Router({
     {path: '/demo13', name: 'demo13', component: Demo13},
     {path: '/demo14', name: 'demo14', component: Demo14},
     {path: '/demo15', name: 'demo15', component: Demo15},
-    {path: '/demo16', name: 'demo16', component: Demo16}
+    {path: '/demo16', name: 'demo16', component: Demo16},
+    {path: '/demo17', name: 'demo17', component: Demo17},
+    {path: '/demo18/:id', name: 'demo18', component: Demo18},
+    {path: '/demo19/:id', name: 'demo19', component: Demo19},
+    {path: '/demo20/:id', name: 'demo20', component: Demo20, children: [{path: 'child', component: Demo20Child}]}
   ]
 })

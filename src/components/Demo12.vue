@@ -1,26 +1,23 @@
 <template>
-    <div class="component">
-        <div class="container">
-            <div class="row">
-                <li-componnet/>
-                {{name1}}
-            </div>
+	<div class="component">
+		<div class="container">
+			<div class="row">
+				<li-componnet/>
+			</div>
 
-        </div>
-    </div>
+		</div>
+	</div>
 </template>
 
 <script>
   export default {
     data: function () {
       return {
-        name1: '111'
+        name1: {}
       }
     },
-    methods: {
-    },
+    methods: {},
     mounted: function () {
-      this.name1 = '222'
     }
   }
 </script>
