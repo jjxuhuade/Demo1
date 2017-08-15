@@ -22,6 +22,13 @@ import Demo18 from '@/components/Demo18'
 import Demo19 from '@/components/Demo19'
 import Demo20 from '@/components/Demo20'
 import Demo20Child from '@/components/Demo20Child'
+import Demo21 from '@/components/Demo21'
+import block1 from '@/components/block1'
+import block2 from '@/components/block2'
+import block3 from '@/components/block3'
+import emptyBlock from '@/components/emptyBlock'
+import Demo22 from '@/components/Demo22'
+import Demo23 from '@/components/Demo23'
 
 Vue.use(Router)
 
@@ -48,6 +55,17 @@ export default new Router({
     {path: '/demo17', name: 'demo17', component: Demo17},
     {path: '/demo18/:id', name: 'demo18', component: Demo18},
     {path: '/demo19/:id', name: 'demo19', component: Demo19},
-    {path: '/demo20/:id', name: 'demo20', component: Demo20, children: [{path: 'child', component: Demo20Child}]}
-  ]
+    {path: '/demo20/:id', name: 'demo20', component: Demo20, children: [{path: 'child', component: Demo20Child}]},
+    {
+      path: '/demo21',
+      name: 'demo21',
+      component: Demo21,
+      children: [{path: '', component: emptyBlock}, {path: 'child', components: {default: block1, block2, block3}}]
+    },
+    {path: '/demo22/:id', name: 'demo22', component: Demo22},
+    {path: '/demo23/:id', name: 'demo23', component: Demo23}
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return {x: 0, y: 0}
+  }
 })

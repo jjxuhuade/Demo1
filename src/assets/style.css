@@ -8,6 +8,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 .header ul li {
   border: 1px solid #ccc;
