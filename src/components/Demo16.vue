@@ -2,7 +2,7 @@
     <div class="component">
         <div class="container">
             <div class="row">
-                demo16
+                demo16 异步组件
                 <jj-test></jj-test>
             </div>
         </div>

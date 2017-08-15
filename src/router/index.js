@@ -1,34 +1,34 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import Demo1 from '@/components/Demo1'
-import Demo2 from '@/components/Demo2'
-import Demo3 from '@/components/Demo3'
-import Demo4 from '@/components/Key'
-import Demo5 from '@/components/Demo5'
-import Demo6 from '@/components/Demo6'
-import Demo7 from '@/components/Demo7'
-import Demo8 from '@/components/Demo8'
-import Demo9 from '@/components/Demo9'
-import Demo10 from '@/components/Demo10'
-import Demo11 from '@/components/Demo11'
-import Demo12 from '@/components/Demo12'
-import Demo13 from '@/components/Demo13'
-import Demo14 from '@/components/Demo14'
-import Demo15 from '@/components/Demo15'
-import Demo16 from '@/components/Demo16'
-import Demo17 from '@/components/Demo17'
-import Demo18 from '@/components/Demo18'
-import Demo19 from '@/components/Demo19'
-import Demo20 from '@/components/Demo20'
-import Demo20Child from '@/components/Demo20Child'
-import Demo21 from '@/components/Demo21'
-import block1 from '@/components/block1'
-import block2 from '@/components/block2'
-import block3 from '@/components/block3'
-import emptyBlock from '@/components/emptyBlock'
-import Demo22 from '@/components/Demo22'
-import Demo23 from '@/components/Demo23'
+const Demo1 = resolve => require(['../components/Demo1'], resolve)
+const Demo2 = resolve => require(['../components/Demo2'], resolve)
+const Demo3 = resolve => require(['../components/Demo3'], resolve)
+const Demo4 = resolve => require(['../components/Key'], resolve)
+const Demo5 = resolve => require(['../components/Demo5'], resolve)
+const Demo6 = resolve => require(['../components/Demo6'], resolve)
+const Demo7 = resolve => require(['../components/Demo7'], resolve)
+const Demo8 = resolve => require(['../components/Demo8'], resolve)
+const Demo9 = resolve => require(['../components/Demo9'], resolve)
+const Demo10 = resolve => require(['../components/Demo10'], resolve)
+const Demo11 = resolve => require(['../components/Demo11'], resolve)
+const Demo12 = resolve => require(['../components/Demo12'], resolve)
+const Demo13 = resolve => require(['../components/Demo13'], resolve)
+const Demo14 = resolve => require(['../components/Demo14'], resolve)
+const Demo15 = resolve => require(['../components/Demo15'], resolve)
+const Demo16 = resolve => require(['../components/Demo16'], resolve)
+const Demo17 = resolve => require(['../components/Demo17'], resolve)
+const Demo18 = resolve => require(['../components/Demo18'], resolve)
+const Demo19 = resolve => require(['../components/Demo19'], resolve)
+const Demo20 = resolve => require(['../components/Demo20'], resolve)
+const Demo20Child = resolve => require(['../components/Demo20Child'], resolve)
+const Demo21 = resolve => require(['../components/Demo21'], resolve)
+const block1 = resolve => require(['../components/block1'], resolve)
+const block2 = resolve => require(['../components/block2'], resolve)
+const block3 = resolve => require(['../components/block3'], resolve)
+const emptyBlock = resolve => require(['../components/emptyBlock'], resolve)
+const Demo22 = resolve => require(['../components/Demo22'], resolve)
+const Demo23 = resolve => require(['../components/Demo23'], resolve)
 
 Vue.use(Router)
 
